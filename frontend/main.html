@@ -1,0 +1,26 @@
+<header>
+  <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+  <script defer src="main.js"></script>
+</header>
+<body>
+  <h1>Sheet API</h1>
+  <p>
+
+    Note: the sheet ID can be found in between /d/ ----- /edit#
+    <br />
+  </p>
+  <form class="info">
+    <label>Sheet ID: </label> <input id="sheetid" />
+
+    <label>Range: </label><input id="range" placeholder=" e.g. A1:C5" />
+  </form>
+  <button id="sheetIdButton">Request sheet</button>
+  <button id="backButton">Back</button>
+  <div id="sheetReturn">
+    <table id="sheetdata" class="display" width="100%"></table>
+
+  </div>
+</body>

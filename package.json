@@ -1,0 +1,20 @@
+{
+  "name": "sheetsbackend",
+  "version": "1.0.0",
+  "description": "Google sheets database test",
+  "main": "back.js",
+  "scripts": {
+    "test": "nodemon back.js"
+  },
+  "author": "Ross K",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "googleapis": "^74.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "keygenerator": "^1.0.4",
+    "socket.io": "^4.1.2",
+    "stormdb": "^0.4.1"
+  }
+}
